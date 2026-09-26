@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import imgPintura from '../assets/img-pintura.png';
 
-// Generador de Confeti de Fondo para recrear la atmósfera festiva
+
 // Generador de Confeti Premium, Dinámico y Optimizado en 3D
 const ConfettiBackground = () => {
   const [particles, setParticles] = React.useState([]);

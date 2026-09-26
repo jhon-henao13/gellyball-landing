@@ -30,7 +30,7 @@ export default function Hero() {
 
       {/* CONTENT CONTAINER */}
       {/* CAMBIO 3: Añadimos padding inferior (pb-12 o pb-16) para que los textos respiren desde el borde inferior */}
-      <div className="relative z-10 max-w-7xl w-full mx-auto px-6 sm:px-8 lg:px-12 pb-16 sm:pb-20 grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+      <div className="relative z-10 max-w-7xl w-full mx-auto px-6 sm:px-8 lg:px-12 pb-20 sm:pb-24 grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
         
 
         {/* LEFT TEXT COLUMN */}
@@ -57,7 +57,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="text-4xl sm:text-6xl lg:text-7xl font-semibold text-white tracking-normal !leading-[1.2] text-shadow-strong uppercase font-fredoka"
+            className="text-5xl sm:text-6xl lg:text-7xl font-semibold text-white tracking-normal !leading-[1.2] text-shadow-strong uppercase font-fredoka"
           >
             DIVERSIÓN<br />
             PARA EVENTOS
@@ -68,7 +68,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
-            className="text-base sm:text-xl md:text-2xl text-slate-100 font-normal max-w-xl !leading-relaxed text-shadow-subtle pt-1"
+            className="text-lg sm:text-xl md:text-2xl text-slate-100 font-normal max-w-xl !leading-relaxed text-shadow-subtle pt-1"
           >
             Convierte su cumpleaños en una aventura con <b>Gellyball, Cabinas VR y más en tu jardín.</b>
           </motion.p>
