@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Stats from './components/Stats';
 import WhatsAppButton from './components/WhatsAppButton';
 import Footer from './components/Footer';
 
@@ -10,15 +11,12 @@ function App() {
       {/* Navbar Superior */}
       <Navbar />
 
-      {/* Hero Principal */}
+      {/* Secciones Principales */}
       <main>
         <Hero />
         
-        {/* Marcadores de posición para las siguientes secciones */}
-        <div id="atracciones" className="py-20 text-center bg-slate-50 border-b">
-          <h2 className="text-3xl font-bold text-slate-800">Sección de Atracciones</h2>
-          <p className="text-slate-500 mt-2">Próximamente...</p>
-        </div>
+        {/* Nueva Sección de Métricas y Experiencia */}
+        <Stats />
       </main>
 
       {/* Botón Flotante de WhatsApp */}
