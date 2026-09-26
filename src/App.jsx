@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Activities from './components/Activities';
+import Staff from './components/Staff';
 import WhatsAppButton from './components/WhatsAppButton';
 import Footer from './components/Footer';
 
@@ -15,6 +16,7 @@ function App() {
         <Hero />
         <Stats />
         <Activities />
+        <Staff />
       </main>
 
       <WhatsAppButton />
