@@ -30,7 +30,7 @@ export default function Hero() {
 
       {/* CONTENT CONTAINER */}
       {/* CAMBIO 3: Añadimos padding inferior (pb-12 o pb-16) para que los textos respiren desde el borde inferior */}
-      <div className="relative z-10 max-w-7xl w-full mx-auto px-6 sm:px-8 lg:px-12 pb-12 sm:pb-16 grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+      <div className="relative z-10 max-w-7xl w-full mx-auto px-6 sm:px-8 lg:px-12 pb-16 sm:pb-20 grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
         
 
         {/* LEFT TEXT COLUMN */}

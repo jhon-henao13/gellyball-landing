@@ -49,7 +49,7 @@ export default function Navbar() {
             <a
               key={idx}
               href={link.href}
-              className="text-slate-700 hover:text-brand-blue font-medium text-base transition-colors duration-200 relative group"
+              className="text-slate-700 hover:text-brand-blue font-medium text-lg transition-colors duration-200 relative group"
             >
               {link.name}
               <span className="absolute bottom-[-4px] left-0 w-0 h-[2.5px] bg-brand-blue transition-all duration-300 group-hover:w-full rounded-full" />
