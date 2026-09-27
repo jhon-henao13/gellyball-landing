@@ -6,6 +6,7 @@ import Activities from './components/Activities';
 import Staff from './components/Staff';
 import Resenas from './components/Resenas';
 import HowItWorks from './components/HowItWorks';
+import FAQ from './components/FAQ';
 import WhatsAppButton from './components/WhatsAppButton';
 import Footer from './components/Footer';
 
@@ -21,6 +22,7 @@ function App() {
         <Staff />
         <Resenas />
         <HowItWorks />
+        <FAQ />
       </main>
 
       <WhatsAppButton />
