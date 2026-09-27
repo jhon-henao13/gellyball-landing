@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Activities from './components/Activities';
 import Staff from './components/Staff';
+import Resenas from './components/Resenas';
 import WhatsAppButton from './components/WhatsAppButton';
 import Footer from './components/Footer';
 
@@ -17,6 +18,7 @@ function App() {
         <Stats />
         <Activities />
         <Staff />
+        <Resenas />
       </main>
 
       <WhatsAppButton />
