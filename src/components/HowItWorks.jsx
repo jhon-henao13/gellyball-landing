@@ -77,7 +77,7 @@ const highlights = [
 
 export default function ComoFunciona() {
   return (
-    <section id="como-funciona" className="py-16 sm:py-24 bg-white relative overflow-hidden">
+    <section id="como-funciona" className="py-16 sm:py-24 bg-gradient-to-b from-white to-[#e6eaed] relative overflow-hidden">
       
       {/* DECORACIÓN DE FONDO */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full pointer-events-none opacity-30">
