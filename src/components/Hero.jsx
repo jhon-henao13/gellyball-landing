@@ -68,7 +68,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
-            className="text-lg sm:text-xl md:text-2xl text-slate-100 font-normal max-w-xl !leading-relaxed text-shadow-subtle pt-1"
+            className="text-lg sm:text-xl md:text-2xl text-slate-100 font-normal max-w-xl !leading-relaxed text-shadow-subtle"
           >
             Convierte su cumpleaños en una aventura con <b>Gellyball, Cabinas VR y más en tu jardín.</b>
           </motion.p>
