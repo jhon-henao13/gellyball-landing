@@ -8,6 +8,7 @@ import Resenas from './components/Resenas';
 import HowItWorks from './components/HowItWorks';
 import FAQ from './components/FAQ';
 import ContactCTA from './components/ContactCTA';
+import InstagramFeed from './components/InstagramFeed';
 import WhatsAppButton from './components/WhatsAppButton';
 import Footer from './components/Footer';
 
@@ -25,6 +26,7 @@ function App() {
         <HowItWorks />
         <FAQ />
         <ContactCTA />
+        <InstagramFeed />
       </main>
 
       <WhatsAppButton />
