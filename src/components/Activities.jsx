@@ -13,7 +13,7 @@ export default function Activities() {
       bgColor: 'bg-[#e8f5fc]', // Azul claro pastel exacto
       videoUrl: 'https://res.cloudinary.com/dodxaehv3/video/upload/v1790819661/activities1_mbbzqx.mp4', // <-- MODIFICADO
       posterImg: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800&auto=format&fit=crop',
-      caption: '¿TE IMAGINAS TENER UN...',
+      caption: ' ',
     },
     talleres: {
       id: 'talleres',
@@ -21,7 +21,7 @@ export default function Activities() {
       bgColor: 'bg-[#ffe4e1]', // Rosa pastel exacto
       videoUrl: 'https://res.cloudinary.com/dodxaehv3/video/upload/v1790819664/activities3_xkhw4r.mp4', // <-- MODIFICADO
       posterImg: 'https://images.unsplash.com/photo-1560421683-6856ea585c78?q=80&w=800&auto=format&fit=crop',
-      caption: 'COMBINACIÓN',
+      caption: ' ',
     },
     realidadVirtual: {
       id: 'realidadVirtual',
@@ -29,7 +29,7 @@ export default function Activities() {
       bgColor: 'bg-[#fee3a2]', // Amarillo pastel exacto
       videoUrl: 'https://res.cloudinary.com/dodxaehv3/video/upload/v1790819663/activities2_hctbhe.mp4', // <-- MODIFICADO
       posterImg: '...',
-      caption: 'INVITADOS',
+      caption: ' ',
     },
   };
 
