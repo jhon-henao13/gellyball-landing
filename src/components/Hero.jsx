@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import heroBg from '../assets/background-hero.jpg';
+import heroVideo from '../assets/background-hero-video.mp4';
 
 export default function Hero() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -10,13 +10,18 @@ export default function Hero() {
     <section className="relative w-full min-h-[85vh] sm:min-h-screen pt-20 flex items-end justify-center overflow-hidden bg-slate-900">
       
       {/* BACKGROUND IMAGE & OVERLAYS */}
-      {/* BACKGROUND IMAGE & OVERLAYS */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroBg}
-          alt="Gellyball Fondo"
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-full object-cover object-center scale-105 transform transition-transform duration-1000"
-        />
+        >
+          <source src={heroVideo} type="video/mp4" />
+          Tu navegador no soporta videos HTML5.
+        </video>
+        
         
         {/* Gradiente principal UI/UX: Fuerte en la esquina inferior izquierda, desvaneciéndose hacia arriba y derecha */}
         <div className="absolute inset-0 bg-gradient-to-tr from-black/45 via-black/20 to-transparent" />
@@ -68,9 +73,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
-            className="text-lg sm:text-xl md:text-2xl text-slate-100 font-normal max-w-xl !leading-relaxed text-shadow-subtle"
+            className="text-lg sm:text-xl md:text-2xl text-slate-100 font-normal max-w-xl !leading-relaxed text-shadow-subtle tracking-wide"
           >
-            Convierte su cumpleaños en una aventura con <b>Gellyball, Cabinas VR y más en tu jardín.</b>
+            Convierte su cumpleaños en una aventura con <b>Gellyball, Cabinas VR y más en tu evento.</b>
           </motion.p>
         
 

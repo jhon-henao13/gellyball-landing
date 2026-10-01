@@ -11,15 +11,15 @@ export default function Activities() {
       id: 'gellyball',
       title: 'GELLYBALL',
       bgColor: 'bg-[#e8f5fc]', // Azul claro pastel exacto
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1', // Reemplazar por URL o .mp4
-      posterImg: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800&auto=format&fit=crop', // Reemplazar por poster local
+      videoUrl: 'https://res.cloudinary.com/dodxaehv3/video/upload/v1790819661/activities1_mbbzqx.mp4', // <-- MODIFICADO
+      posterImg: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800&auto=format&fit=crop',
       caption: '¿TE IMAGINAS TENER UN...',
     },
     talleres: {
       id: 'talleres',
       title: 'TALLERES',
       bgColor: 'bg-[#ffe4e1]', // Rosa pastel exacto
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1',
+      videoUrl: 'https://res.cloudinary.com/dodxaehv3/video/upload/v1790819664/activities3_xkhw4r.mp4', // <-- MODIFICADO
       posterImg: 'https://images.unsplash.com/photo-1560421683-6856ea585c78?q=80&w=800&auto=format&fit=crop',
       caption: 'COMBINACIÓN',
     },
@@ -27,8 +27,8 @@ export default function Activities() {
       id: 'realidadVirtual',
       title: 'REALIDAD VIRTUAL',
       bgColor: 'bg-[#fee3a2]', // Amarillo pastel exacto
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1',
-      posterImg: 'https://images.unsplash.com/photo-1759078634211-cbe4201f26fc?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fDM2MCUyMHZyfGVufDB8fDB8fHww',
+      videoUrl: 'https://res.cloudinary.com/dodxaehv3/video/upload/v1790819663/activities2_hctbhe.mp4', // <-- MODIFICADO
+      posterImg: '...',
       caption: 'INVITADOS',
     },
   };
@@ -177,14 +177,15 @@ export default function Activities() {
                 </svg>
               </button>
 
-              {/* Iframe o Video Tag */}
-              <iframe
+              {/* Video MP4 en Modal */}
+              <video
                 className="w-full h-full object-cover"
                 src={activeVideo.videoUrl}
-                title={activeVideo.title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
+                controls
+                autoPlay
+                playsInline
               />
+
             </motion.div>
           </motion.div>
         )}
@@ -193,19 +194,22 @@ export default function Activities() {
   );
 }
 
-// COMPONENTE AUXILIAR: Frame del Reproductor de Video Vertical (Reels Format)
+
 function VideoPlayerFrame({ activity, onPlay }) {
   return (
     <div 
       onClick={onPlay}
       className="relative w-full max-w-[280px] sm:max-w-[320px] aspect-[9/16] rounded-2xl overflow-hidden shadow-lg cursor-pointer group transform transition-all duration-300 hover:scale-[1.02]"
     >
-      {/* Imagen de Poster / Previsualización */}
-      <img
-        src={activity.posterImg}
-        alt={activity.title}
+      <video
+        src={activity.videoUrl}
+        autoPlay
+        loop
+        muted
+        playsInline
         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
       />
+
 
       {/* Sombreante para contraste de texto y botón */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10 transition-opacity duration-300 group-hover:opacity-90" />
