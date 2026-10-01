@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import heroVideo from '../assets/background-hero-video.mp4';
+const heroVideoUrl = 'https://res.cloudinary.com/dodxaehv3/video/upload/v1790820645/background-hero-video_scdxea.mp4';
 
 export default function Hero() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -18,7 +18,7 @@ export default function Hero() {
           playsInline
           className="w-full h-full object-cover object-center scale-105 transform transition-transform duration-1000"
         >
-          <source src={heroVideo} type="video/mp4" />
+          <source src={heroVideoUrl} type="video/mp4" />
           Tu navegador no soporta videos HTML5.
         </video>
         
@@ -78,8 +78,6 @@ export default function Hero() {
             Convierte su cumpleaños en una aventura con <b>Gellyball, Cabinas VR y más en tu evento.</b>
           </motion.p>
         
-
-
           {/* Botones de Acción Móviles / CTA Adicional */}
           {/* <motion.div 
             initial={{ opacity: 0, y: 20 }}
