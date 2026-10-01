@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export default function WhatsAppButton() {
   const [showTooltip, setShowTooltip] = useState(false);
-  const phoneNumber = "523312345678"; // Reemplazar por número real
+  const phoneNumber = "5213332354398";
   const message = encodeURIComponent("¡Hola! 👋 Me interesa cotizar un evento de Gellyball.");
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
