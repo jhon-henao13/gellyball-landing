@@ -62,7 +62,9 @@ export default function Navbar() {
           <motion.a
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.96 }}
-            href="#contacto"
+            href="https://wa.me/5213332354398?text=Hola,%20deseo%20apartar%20una%20fecha%20para%20mi%20evento"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-brand-blue hover:bg-brand-blueHover text-white font-bold px-5 py-2 rounded-lg shadow-sm hover:shadow-glow transition-all duration-300 text-lg flex items-center justify-center tracking-wide"
           >
             Aparta tu fecha
@@ -106,13 +108,17 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
+              
               <a
-                href="#contacto"
+                href="https://wa.me/5213332354398?text=Hola,%20deseo%20apartar%20una%20fecha%20para%20mi%20evento"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-full text-center bg-brand-blue text-white font-semibold py-3 rounded-lg shadow-md active:scale-95 transition-transform"
               >
                 Aparta tu fecha
               </a>
+
             </div>
           </motion.div>
         )}

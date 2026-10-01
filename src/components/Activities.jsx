@@ -38,18 +38,19 @@ export default function Activities() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* GRID ASIMÉTRICO EN 2 COLUMNAS */}
+        {/* GRID ASIMÉTRICO EN 2 COLUMNAS */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           {/* COLUMNA IZQUIERDA: Gellyball & Talleres */}
-          <div className="lg:col-span-6 flex flex-col gap-8">
+          <div className="contents lg:col-span-6 lg:flex lg:flex-col lg:gap-8">
             
-            {/* CARD 1: GELLYBALL */}
+            {/* CARD 1: GELLYBALL (Orden 2 en mobile) */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6 }}
-              className={`${activitiesData.gellyball.bgColor} rounded-3xl p-6 sm:p-8 flex flex-col items-center shadow-sm hover:shadow-md transition-shadow duration-300`}
+              className={`order-2 lg:order-none ${activitiesData.gellyball.bgColor} rounded-3xl p-6 sm:p-8 flex flex-col items-center shadow-sm hover:shadow-md transition-shadow duration-300`}
             >
               <h3 className="font-fredoka text-3xl sm:text-4xl font-bold text-[#1a3644] tracking-wide mb-6 text-center">
                 {activitiesData.gellyball.title}
@@ -62,13 +63,13 @@ export default function Activities() {
               />
             </motion.div>
 
-            {/* CARD 2: TALLERES */}
+            {/* CARD 2: TALLERES (Orden 4 en mobile) */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className={`${activitiesData.talleres.bgColor} rounded-3xl p-6 sm:p-8 flex flex-col items-center shadow-sm hover:shadow-md transition-shadow duration-300`}
+              className={`order-4 lg:order-none ${activitiesData.talleres.bgColor} rounded-3xl p-6 sm:p-8 flex flex-col items-center shadow-sm hover:shadow-md transition-shadow duration-300`}
             >
               <h3 className="font-fredoka text-4xl sm:text-5xl font-bold text-[#1a3644] tracking-wide mb-6 text-center">
                 {activitiesData.talleres.title}
@@ -84,15 +85,15 @@ export default function Activities() {
           </div>
 
           {/* COLUMNA DERECHA: Encabezado + Realidad Virtual + CTA */}
-          <div className="lg:col-span-6 flex flex-col gap-14">
+          <div className="contents lg:col-span-6 lg:flex lg:flex-col lg:gap-14">
             
-            {/* ENCABEZADO DE SECCIÓN */}
+            {/* ENCABEZADO DE SECCIÓN (Orden 1 en mobile) */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6 }}
-              className="space-y-3 pt-2"
+              className="order-1 lg:order-none space-y-3 pt-2"
             >
               <span className="text-emerald-700 text-xl font-semibold tracking-widest uppercase block">
                 ACTIVIDADES
@@ -105,13 +106,13 @@ export default function Activities() {
               </p>
             </motion.div>
 
-            {/* CARD 3: REALIDAD VIRTUAL */}
+            {/* CARD 3: REALIDAD VIRTUAL (Orden 3 en mobile) */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className={`${activitiesData.realidadVirtual.bgColor} rounded-3xl p-6 sm:p-8 flex flex-col items-center shadow-sm hover:shadow-md transition-shadow duration-300`}
+              className={`order-3 lg:order-none ${activitiesData.realidadVirtual.bgColor} rounded-3xl p-6 sm:p-8 flex flex-col items-center shadow-sm hover:shadow-md transition-shadow duration-300`}
             >
               <h3 className="font-fredoka text-4xl sm:text-5xl font-bold text-[#1a3644] tracking-wide mb-6 text-center">
                 {activitiesData.realidadVirtual.title}
@@ -124,17 +125,20 @@ export default function Activities() {
               />
             </motion.div>
 
-            {/* BOTÓN CTA: APARTA TU FECHA */}
+            {/* BOTÓN CTA: APARTA TU FECHA (Orden 5 en mobile) */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
+              className="order-5 lg:order-none"
             >
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href="#contacto"
+                href="https://wa.me/5213332354398?text=Hola,%20deseo%20apartar%20una%20fecha%20para%20mi%20evento"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full bg-[#6ACAE8] hover:bg-brand-blueHover text-white font-fredoka text-2xl font-bold py-6 px-6 rounded-2xl shadow-md hover:shadow-glow transition-all duration-300 flex items-center justify-center gap-3 group text-center tracking-wider"
               >
                 <span>Aparta tu fecha</span>
@@ -147,6 +151,7 @@ export default function Activities() {
           </div>
 
         </div>
+        
       </div>
 
       {/* MODAL REPRODUCTOR DE VIDEO */}

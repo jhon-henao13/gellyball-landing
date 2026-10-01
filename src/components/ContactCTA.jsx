@@ -4,7 +4,7 @@ import contactImg from '../assets/contact-section.png';
 
 export default function ContactCTA() {
   // Número o enlace directo de WhatsApp para el botón
-  const whatsappUrl = "https://wa.me/5213300000000?text=Hola,%20quiero%20cotizar%20y%20apartar%20mi%20fecha%20para%20un%20evento%20Gellyball";
+  const whatsappUrl = "https://wa.me/5213332354398?text=Hola,%20quiero%20cotizar%20y%20apartar%20mi%20fecha%20para%20un%20evento%20Gellyball";
 
   return (
     <section id="contacto" className="py-8 sm:py-10 px-4 sm:px-4 lg:px-6 bg-white relative overflow-hidden">

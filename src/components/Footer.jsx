@@ -9,7 +9,7 @@ export default function Footer() {
     instagram: "https://www.instagram.com/gellyballguadalajara/",
     facebook: "https://www.facebook.com/gellyballguadalajara", // Reemplaza si es necesario
     tiktok: "https://www.tiktok.com/@gellyballguadalajara",     // Reemplaza si es necesario
-    whatsapp: "https://wa.me/5213300000000?text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n"
+    whatsapp: "https://wa.me/5213332354398?text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n"
   };
 
   return (
@@ -121,7 +121,7 @@ export default function Footer() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
-                  <span className="font-semibold">+52 (33) 0000-0000</span>
+                  <span className="font-semibold">+52 1 33 3235 4398</span>
                 </a>
 
                 <div className="flex items-start justify-center md:justify-start gap-2.5 text-slate-400">
