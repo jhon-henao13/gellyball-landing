@@ -11,7 +11,7 @@ export default function Activities() {
       id: 'gellyball',
       title: 'GELLYBALL',
       bgColor: 'bg-[#e8f5fc]', // Azul claro pastel exacto
-      videoUrl: 'https://res.cloudinary.com/dodxaehv3/video/upload/v1790819661/activities1_mbbzqx.mp4', // <-- MODIFICADO
+      videoUrl: 'https://prjf8zvicsxvitgi.public.blob.vercel-storage.com/activities-gellyball.mp4', // <-- MODIFICADO
       posterImg: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800&auto=format&fit=crop',
       caption: ' ',
     },
@@ -19,7 +19,7 @@ export default function Activities() {
       id: 'talleres',
       title: 'TALLERES',
       bgColor: 'bg-[#ffe4e1]', // Rosa pastel exacto
-      videoUrl: 'https://res.cloudinary.com/dodxaehv3/video/upload/v1790819664/activities3_xkhw4r.mp4', // <-- MODIFICADO
+      videoUrl: 'https://prjf8zvicsxvitgi.public.blob.vercel-storage.com/activities-talleres.mp4', // <-- MODIFICADO
       posterImg: 'https://images.unsplash.com/photo-1560421683-6856ea585c78?q=80&w=800&auto=format&fit=crop',
       caption: ' ',
     },
@@ -27,7 +27,7 @@ export default function Activities() {
       id: 'realidadVirtual',
       title: 'REALIDAD VIRTUAL',
       bgColor: 'bg-[#fee3a2]', // Amarillo pastel exacto
-      videoUrl: 'https://res.cloudinary.com/dodxaehv3/video/upload/v1790819663/activities2_hctbhe.mp4', // <-- MODIFICADO
+      videoUrl: 'https://prjf8zvicsxvitgi.public.blob.vercel-storage.com/activities-rv.mp4', // <-- MODIFICADO
       posterImg: '...',
       caption: ' ',
     },
@@ -37,7 +37,6 @@ export default function Activities() {
     <section id="atracciones" className="relative w-full py-16 sm:py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* GRID ASIMÉTRICO EN 2 COLUMNAS */}
         {/* GRID ASIMÉTRICO EN 2 COLUMNAS */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
