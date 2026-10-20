@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-const heroVideoUrl = 'https://res.cloudinary.com/dodxaehv3/video/upload/v1790820645/background-hero-video_scdxea.mp4';
+const heroVideoUrl = '/hero-gellyball.mp4';
 
 export default function Hero() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
