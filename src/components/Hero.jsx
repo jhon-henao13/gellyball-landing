@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-const heroVideoUrl = 'ttps://videos.gellyballguadalajara.com/hero-gellyball.mp4';
+const heroVideoUrl = 'https://videos.gellyballguadalajara.com/hero-gellyball.mp4';
 
 
 export default function Hero() {

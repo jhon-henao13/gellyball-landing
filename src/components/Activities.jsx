@@ -19,7 +19,7 @@ export default function Activities() {
       id: 'talleres',
       title: 'TALLERES',
       bgColor: 'bg-[#ffe4e1]', // Rosa pastel exacto
-      videoUrl: 'ttps://videos.gellyballguadalajara.com/activities-talleres.mp4',
+      videoUrl: 'https://videos.gellyballguadalajara.com/activities-talleres.mp4',
       posterImg: 'https://images.unsplash.com/photo-1560421683-6856ea585c78?q=80&w=800&auto=format&fit=crop',
       caption: ' ',
     },
@@ -27,7 +27,7 @@ export default function Activities() {
       id: 'realidadVirtual',
       title: 'REALIDAD VIRTUAL',
       bgColor: 'bg-[#fee3a2]', // Amarillo pastel exacto
-      videoUrl: 'ttps://videos.gellyballguadalajara.com/activities-rv.mp4',
+      videoUrl: 'https://videos.gellyballguadalajara.com/activities-rv.mp4',
       posterImg: '...',
       caption: ' ',
     },
