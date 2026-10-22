@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-const heroVideoUrl = 'https://gellyball-videos.s3.us-east-005.backblazeb2.com/hero-gellyball.mp4';
+const heroVideoUrl = 'ttps://videos.gellyballguadalajara.com/hero-gellyball.mp4';
+
 
 export default function Hero() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);

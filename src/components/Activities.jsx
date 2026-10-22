@@ -11,7 +11,7 @@ export default function Activities() {
       id: 'gellyball',
       title: 'GELLYBALL',
       bgColor: 'bg-[#e8f5fc]', // Azul claro pastel exacto
-      videoUrl: 'https://gellyball-videos.s3.us-east-005.backblazeb2.com/activities-gellyball.mp4', // <-- MODIFICADO
+      videoUrl: 'https://videos.gellyballguadalajara.com/activities-gellyball.mp4',
       posterImg: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800&auto=format&fit=crop',
       caption: ' ',
     },
@@ -19,7 +19,7 @@ export default function Activities() {
       id: 'talleres',
       title: 'TALLERES',
       bgColor: 'bg-[#ffe4e1]', // Rosa pastel exacto
-      videoUrl: 'https://gellyball-videos.s3.us-east-005.backblazeb2.com/activities-talleres.mp4', // <-- MODIFICADO
+      videoUrl: 'ttps://videos.gellyballguadalajara.com/activities-talleres.mp4',
       posterImg: 'https://images.unsplash.com/photo-1560421683-6856ea585c78?q=80&w=800&auto=format&fit=crop',
       caption: ' ',
     },
@@ -27,7 +27,7 @@ export default function Activities() {
       id: 'realidadVirtual',
       title: 'REALIDAD VIRTUAL',
       bgColor: 'bg-[#fee3a2]', // Amarillo pastel exacto
-      videoUrl: 'https://gellyball-videos.s3.us-east-005.backblazeb2.com/activities-rv.mp4', // <-- MODIFICADO
+      videoUrl: 'ttps://videos.gellyballguadalajara.com/activities-rv.mp4',
       posterImg: '...',
       caption: ' ',
     },
